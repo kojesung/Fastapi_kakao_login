@@ -34,7 +34,7 @@ def oauth_url_api():
 
 @app.get("/data")
 def name():
-    return {'hello':1234}
+    return {'hello':1234}#
 
 @app.get("/oauth")
 async def oauth_api(code : str, Authorize: AuthJWT = Depends()):#url에서 가져온 code의 값이 accesstoken을 받아오기 위한 임시 토큰의 역할
